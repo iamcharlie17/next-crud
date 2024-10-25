@@ -1,6 +1,6 @@
 export const getSingleTopic = async (id) => {
     try {
-      const res = await fetch(`https://next-crud-lac-delta.vercel.app/api/topics/${id}`, {
+      const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
         cache: "no-store",
       });
       return await res.json();  

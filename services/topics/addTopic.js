@@ -1,5 +1,5 @@
 export const addTopic = async ({ title, description }) => {
-  const response = await fetch("https://next-crud-lac-delta.vercel.app/api/topics", {
+  const response = await fetch("http://localhost:3000/api/topics", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

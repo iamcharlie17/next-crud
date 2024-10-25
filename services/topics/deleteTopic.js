@@ -1,6 +1,6 @@
 export const deleteTopic = async(id) =>{
     try {
-        const res = await fetch(`https://next-crud-lac-delta.vercel.app/api/topics?id=${id}`, {
+        const res = await fetch(`http://localhost:3000/api/topics?id=${id}`, {
             method: "DELETE"
         })
         return res.json();
