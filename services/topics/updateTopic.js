@@ -2,7 +2,7 @@ export const updateTopic = async (id, {newTitle, newDescription}) =>{
     if(!id) throw new Error("Id not found");
 
     try {
-        const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
+        const res = await fetch(`https://next-crud-lac-delta.vercel.app/api/topics/${id}`, {
             method: "PUT",
             headers: {
                 "Content-type" : "application/json"
